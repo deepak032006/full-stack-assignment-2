@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CalendarDays } from "lucide-react";
 
 const SignupForm = () => {
@@ -76,9 +76,9 @@ const SignupForm = () => {
 
       <p className="text-sm text-center mt-6">
         Already have an account??{" "}
-        <a href="/signin" className="text-blue-600 underline">
+        <Link to="/signin" className="text-blue-600 underline">
           Sign in
-        </a>
+        </Link>
       </p>
     </div>
   );

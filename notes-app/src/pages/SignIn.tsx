@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Eye, EyeOff } from "lucide-react";
 
@@ -92,9 +92,9 @@ const SignIn = () => {
 
           <p className="text-sm text-center mt-6">
             Need an account?{" "}
-            <a href="/" className="text-blue-600 underline">
+            <Link to="/" className="text-blue-600 underline">
               Create one
-            </a>
+            </Link>
           </p>
         </div>
       </div>
