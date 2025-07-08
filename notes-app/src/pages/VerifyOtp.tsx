@@ -9,7 +9,7 @@ function VerifyOtp() {
 
   const handleVerify = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/verify-otp", {
+      const res = await axios.post("https://full-stack-assignment-2-0n7g.onrender.com/api/auth/verify-otp", {
         email: state.email,
         otp,
       });
@@ -25,7 +25,7 @@ function VerifyOtp() {
 
   const handleResend = async () => {
     try {
-      await axios.post("http://localhost:5000/api/auth/signup", {
+      await axios.post("https://full-stack-assignment-2-0n7g.onrender.com/api/auth/signup", {
         email: state.email,
       });
       alert("OTP resent!");

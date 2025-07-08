@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://full-stack-assignment-2-0n7g.onrender.com",
   withCredentials: true, // for cookie-based auth (if used)
 });
 
