@@ -9,7 +9,7 @@ function VerifyOtp() {
 
   const handleVerify = async () => {
     try {
-      const res = await axios.post("https://full-stack-assignment-2-0n7g.onrender.com/api/auth/verify-otp", {
+      const res = await axios.post("https://full-stack-assignment-2-1.onrender.com/api/auth/verify-otp", {
         email: state.email,
         otp,
       });
