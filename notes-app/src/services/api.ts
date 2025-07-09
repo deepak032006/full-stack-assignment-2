@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://full-stack-assignment-2-1.onrender.com",
+  baseURL: "https://full-stack-assignment-2-2.onrender.com",
   withCredentials: true, // for cookie-based auth (if used)
 });
 

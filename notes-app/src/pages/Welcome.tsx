@@ -12,7 +12,7 @@ function Welcome() {
 
   const fetchNotes = async () => {
     try {
-      const res = await axios.get("https://full-stack-assignment-2-1.onrender.com/api/notes", {
+      const res = await axios.get("https://full-stack-assignment-2-2.onrender.com/api/notes", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setNotes(res.data.map((n: any) => ({ id: n.id, content: n.content })));
@@ -23,7 +23,7 @@ function Welcome() {
 
   const fetchUser = async () => {
     try {
-      const res = await axios.get("https://full-stack-assignment-2-1.onrender.com/api/auth/me", {
+      const res = await axios.get("https://full-stack-assignment-2-2.onrender.com/api/auth/me", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setEmail(res.data.email); // Assuming backend sends { email, name, etc. }
@@ -36,7 +36,7 @@ function Welcome() {
     if (!newNote.trim()) return;
     try {
       const res = await axios.post(
-        "https://full-stack-assignment-2-1.onrender.com/api/notes",
+        "https://full-stack-assignment-2-2.onrender.com/api/notes",
         { content: newNote },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -49,7 +49,7 @@ function Welcome() {
 
   const deleteNote = async (id: string) => {
     try {
-      await axios.delete(`https://full-stack-assignment-2-1.onrender.com/api/notes/${id}`, {
+      await axios.delete(`https://full-stack-assignment-2-2.onrender.com/api/notes/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setNotes((prev) => prev.filter((n) => n.id !== id));

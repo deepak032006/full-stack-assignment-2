@@ -20,7 +20,7 @@ const SignupForm = () => {
     }
 
     try {
-      await axios.post("https://full-stack-assignment-2-0n7g.onrender.com/api/auth/signup", {
+      await axios.post("https://full-stack-assignment-2-2.onrender.com/api/auth/signup", {
         name,
         dob,
         email,

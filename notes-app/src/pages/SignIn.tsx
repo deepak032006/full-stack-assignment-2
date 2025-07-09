@@ -11,7 +11,7 @@ const SignIn = () => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("https://full-stack-assignment-2-1.onrender.com/api/auth/verify-otp", {
+      const res = await axios.post("https://full-stack-assignment-2-2.onrender.com/api/auth/verify-otp", {
         email,
         otp,
       });
@@ -28,7 +28,7 @@ const SignIn = () => {
 
   const resendOtp = async () => {
     try {
-      await axios.post("https://full-stack-assignment-2-1.onrender.com/api/auth/signup", { email });
+      await axios.post("https://full-stack-assignment-2-2.onrender.com/api/auth/signup", { email });
       alert("OTP resent!");
     } catch {
       alert("Failed to resend OTP");
